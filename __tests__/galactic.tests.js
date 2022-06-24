@@ -9,8 +9,11 @@ test('should create an age object with two properties of age and life expectancy
     expect(donovan.earthAge).toEqual(19);
     expect(donovan.lifeExpectancy).toEqual(79);
   });
-test('should create return the age of object on mercury', () => {
+test('should return the age of the object on mercury', () => {
     expect(donovan.ageOnMercury()).toEqual(79.17);
-});
+  });
+test('should return the age of the object on Venus', () => {
+    expect(donovan.ageOnVenus()).toEqual();
+  });
 
 });
