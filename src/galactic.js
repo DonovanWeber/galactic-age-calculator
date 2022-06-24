@@ -44,8 +44,22 @@ export class Age {
       age -= lifeExpectancy;
       return parseFloat(age.toFixed(2));
     } else  {
-      let lifeLeft = lifeExpectancy -= age;
+      let lifeLeft = lifeExpectancy - age;
       return parseFloat(lifeLeft.toFixed(2));
     } 
+  }
+  lifeOnVenus() {
+    let age = this.ageOnJupiter();
+    let lifeExpectancy = this.lifeExpectancy;
+    console.log(age);
+    console.log(lifeExpectancy);
+    if(age >= lifeExpectancy) {
+      age -= lifeExpectancy;
+      return parseFloat(age.toFixed(2));
+    } else {
+      let lifeLeft = lifeExpectancy - age;
+      return parseFloat(lifeLeft.toFixed(2));
+    }
+
   }
 }
