@@ -18,4 +18,7 @@ test('should return the age of the object on Venus', () => {
 test('should return the age of the object on Mars', () => {
     expect(donovan.ageOnMars()).toEqual(10.11);
   });
+test('should return the age of the object on Jupiter', () => {
+    expect(donovan.ageOnJupiter()).toEqual();
+  })
 });
