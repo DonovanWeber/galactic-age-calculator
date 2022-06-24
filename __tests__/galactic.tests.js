@@ -35,5 +35,5 @@ describe('Age', () => {
     let newPerson = new Age(30, 45);
     expect(donovan.lifeOnMars()).toEqual(4);
     expect(newPerson.lifeOnMars()).toEqual(3);
-  })
+  });
 });
