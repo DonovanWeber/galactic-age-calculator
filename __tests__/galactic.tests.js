@@ -37,8 +37,8 @@ describe('Age', () => {
     expect(newPerson.lifeOnMars()).toEqual(13.94);
   });
   test('should return the life expectancy left on Jupiter or how many years passed your life expectancy on Jupiter', () => {
-    let newPerson = new Age(30, 70);
-    expect(donovan.lifeOnJupiter()).toEqual();
-    expect(newPerson.lifeOnJupiter()).toEqual();
+    let newPerson = new Age(24, 2);
+    expect(donovan.lifeOnJupiter()).toEqual(77.4);
+    expect(newPerson.lifeOnJupiter()).toEqual(0.02);
   });
 });
