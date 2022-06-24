@@ -16,6 +16,7 @@ export class Age {
     const roundedAge = parseFloat(ageOnMercury.toFixed(2));
     return roundedAge;
   }
+  
   ageOnVenus() {
     const daysOnEarth = this.earthAge * 365;
     const daysOnVenus = 365 * .62;
@@ -23,6 +24,7 @@ export class Age {
     const roundedAge = parseFloat(ageOnVenus.toFixed(2));
     return roundedAge;
   }
+  
   ageOnMars() {
     const daysOnEarth = this.earthAge * 365;
     const daysOnMars = 365 * 1.88;
@@ -30,6 +32,7 @@ export class Age {
     const roundedAge = parseFloat(ageOnMars.toFixed(2));
     return roundedAge;
   }
+  
   ageOnJupiter() {
     const daysOnEarth = this.earthAge * 365;
     const daysOnJupiter = 365 * 11.86;
@@ -37,6 +40,7 @@ export class Age {
     const roundedAge = parseFloat(ageOnJupiter.toFixed(2));
     return roundedAge;
   }
+  
   lifeOnMercury() {
     let age = this.ageOnMercury();
     let lifeExpectancy = this.lifeExpectancy;
@@ -48,8 +52,9 @@ export class Age {
       return parseFloat(lifeLeft.toFixed(2));
     } 
   }
+  
   lifeOnVenus() {
-    let age = this.ageOnJupiter();
+    let age = this.ageOnVenus();
     let lifeExpectancy = this.lifeExpectancy;
     console.log(age);
     console.log(lifeExpectancy);
@@ -60,6 +65,9 @@ export class Age {
       let lifeLeft = lifeExpectancy - age;
       return parseFloat(lifeLeft.toFixed(2));
     }
+  }
 
+  lifeOnMars() {
+    let age 
   }
 }
