@@ -14,7 +14,6 @@ export class Age {
     const daysOnMercury = 365 * .24;
     const ageOnMercury = daysOnEarth / daysOnMercury;
     const roundedAge = parseFloat(ageOnMercury.toFixed(2));
-    console.log(roundedAge);
     return roundedAge;
   }
   ageOnVenus() {
@@ -22,7 +21,13 @@ export class Age {
     const daysOnVenus = 365 * .62;
     const ageOnVenus = daysOnEarth / daysOnVenus;
     const roundedAge = parseFloat(ageOnVenus.toFixed(2));
-    console.log(roundedAge);
+    return roundedAge;
+  }
+  ageOnMars() {
+    const daysOnEarth = this.earthAge * 365;
+    const daysOnMars = 365 * 1.88;
+    const ageOnMars = daysOnEarth / daysOnMars;
+    const roundedAge = parseFloat(ageOnMars.toFixed(2));
     return roundedAge;
   }
 }
