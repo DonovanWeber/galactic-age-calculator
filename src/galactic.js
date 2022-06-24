@@ -17,4 +17,12 @@ export class Age {
     console.log(roundedAge);
     return roundedAge;
   }
+  ageOnVenus() {
+    const daysOnEarth = this.earthAge * 365;
+    const daysOnVenus = 365 * .62;
+    const ageOnVenus = daysOnEarth / daysOnVenus;
+    const roundedAge = parseFloat(ageOnVenus.toFixed(2));
+    console.log(roundedAge);
+    return roundedAge;
+  }
 }
