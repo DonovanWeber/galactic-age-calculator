@@ -21,4 +21,7 @@ test('should return the age of the object on Mars', () => {
 test('should return the age of the object on Jupiter', () => {
     expect(donovan.ageOnJupiter()).toEqual(1.6);
   });
+test('should return the life expectancy ', () => {
+  expect(donovan.lifeOnMercury()).toEqual();
+})
 });
