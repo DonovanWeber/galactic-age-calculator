@@ -30,4 +30,11 @@ export class Age {
     const roundedAge = parseFloat(ageOnMars.toFixed(2));
     return roundedAge;
   }
+  ageOnJupiter() {
+    const daysOnEarth = this.earthAge * 365;
+    const daysOnJupiter = 365 * 11.86;
+    const ageOnJupiter = daysOnEarth / daysOnJupiter;
+    const roundedAge = parseFloat(ageOnJupiter.toFixed(2));
+    return roundedAge;
+  }
 }
