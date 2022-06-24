@@ -37,4 +37,15 @@ export class Age {
     const roundedAge = parseFloat(ageOnJupiter.toFixed(2));
     return roundedAge;
   }
+  lifeOnMercury() {
+    let age = this.ageOnMercury();
+    let lifeExpectancy = this.lifeExpectancy;
+    if (age >= lifeExpectancy) {
+      age -= lifeExpectancy;
+      return parseFloat(age.toFixed(2));
+    } else  {
+      let lifeLeft = lifeExpectancy -= age;
+      return parseFloat(lifeLeft.toFixed(2));
+    } 
+  }
 }
