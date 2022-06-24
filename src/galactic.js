@@ -9,4 +9,12 @@ export class Age {
     this.earthAge = earthAge;
     this.lifeExpectancy = lifeExpectancy;
   }
+  ageOnMercury() {
+    const daysOnEarth = this.earthAge * 365;
+    const daysOnMercury = 365 * .24;
+    const ageOnMercury = daysOnEarth / daysOnMercury;
+    const roundedAge = parseFloat(ageOnMercury.toFixed(2));
+    console.log(roundedAge);
+    return roundedAge;
+  }
 }
