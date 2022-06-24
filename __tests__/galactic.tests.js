@@ -32,8 +32,8 @@ describe('Age', () => {
     expect(newPerson.lifeOnVenus()).toEqual(14.84);
   });
   test('should return the life expectancy left on Mars or how many years passed your life expectancy on Mars', () => {
-    let newPerson = new Age(30, 45);
-    expect(donovan.lifeOnMars()).toEqual(4);
-    expect(newPerson.lifeOnMars()).toEqual(3);
+    let newPerson = new Age(45, 10);
+    expect(donovan.lifeOnMars()).toEqual(68.89);
+    expect(newPerson.lifeOnMars()).toEqual(13.94);
   });
 });
